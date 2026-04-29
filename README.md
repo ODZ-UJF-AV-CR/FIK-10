@@ -68,11 +68,11 @@ source_component = 1
 
 ## Zjištění
 #### Telemetrie nefungovala spolehlivě
-  - LoRA paket přijat cca jednou za minutu až 2
+  - LoRA paket přijat cca jednou za minutu až 2 dle dat z TTN
   - SiK - na to že jsme balon viděli, jsme sik nepříjmali spolehlivě
   - sonda CHMI ma data "pořád"
 
-#### 
+
 
 
 

@@ -40,7 +40,31 @@ Repozitář odkazující na použitý SW v rámci letu Fik-10, 28.4.2026
 Chybí konfigurace LoRA...
 
 #### GAPP
-Pro upload telemetrie z LoRA a ze Sik modemů byl použit GAPP běžící na serveru fik.cerrat.eu se 4 auty a 2 balony (Lora a sik balon, použitelnými pro různé predikce). V autech byl použit GAPP-cli připojený ve 3 případech na QGroundControl, který byl nakonfigurován aby přeposílal mavlink data na udp port, který příjmal GAPP-cli.
+Pro upload telemetrie z LoRA a ze Sik modemů byl použit GAPP běžící na serveru fik.cerrat.eu se 4 auty a 2 balony (Lora a sik balon, použitelnými pro různé predikce). V autech byl použit GAPP-cli připojený ve 3 případech na QGroundControl, který byl nakonfigurován aby přeposílal mavlink data na udp port, který příjmal GAPP-cli. Auto 4 (Roman) to upravil tak, aby CLI  vypisovala mavlink pakety do terminálu a serial mavlink byl připojen do GAPP-CLI napřímo. 
+
+```
+cat car-4.toml 
+[uploader]
+enabled = true
+station_callsign = "fik-car-4"
+server_url = "https://fik.crreat.eu"
+
+[gpsd]
+enabled = true
+#host = "127.0.0.1"
+#port = 2947
+interval = 5
+
+[mavlink]
+callsign = "fik-sik"
+enabled = true
+connection_string = "/dev/ttyUSB0"
+baud = 57600
+print_packets = true
+# connection_string = "udpin:0.0.0.0:14550"
+source_system = 1
+source_component = 1
+```
 
 ## Zjištění
 #### Telemetrie nefungovala spolehlivě

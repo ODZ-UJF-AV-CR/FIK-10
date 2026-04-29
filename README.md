@@ -1,6 +1,10 @@
 # FIK-10
 
-Repozitář odkazující na použitý SW v rámci letu Fik-10, 28.4.2026
+Repozitář odkazující na použitý HW a SW v rámci letu Fik-10, 28.4.2026.
+
+## Technical parameters
+
+  - Final mass: 534g (measured after the flight)
 
 ## HW - PX4 subsystém
   - CUAV 5+ (kostka)

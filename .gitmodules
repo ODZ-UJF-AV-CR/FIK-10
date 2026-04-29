@@ -7,3 +7,9 @@
 [submodule "fw/AIRDOS03"]
 	path = fw/AIRDOS03
 	url = git@github.com:UniversalScientificTechnologies/AIRDOS03.git
+[submodule "sw/GAPP"]
+	path = sw/GAPP
+	url = git@github.com:ODZ-UJF-AV-CR/GAPP.git
+[submodule "sw/GAPP-cli"]
+	path = sw/GAPP-cli
+	url = git@github.com:ODZ-UJF-AV-CR/GAPP-cli.git

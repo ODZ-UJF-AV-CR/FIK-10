@@ -39,4 +39,18 @@ Repozitář odkazující na použitý SW v rámci letu Fik-10, 28.4.2026
 
 Chybí konfigurace LoRA...
 
+#### GAPP
+Pro upload telemetrie z LoRA a ze Sik modemů byl použit GAPP běžící na serveru fik.cerrat.eu se 4 auty a 2 balony (Lora a sik balon, použitelnými pro různé predikce). V autech byl použit GAPP-cli připojený ve 3 případech na QGroundControl, který byl nakonfigurován aby přeposílal mavlink data na udp port, který příjmal GAPP-cli.
+
+## Zjištění
+#### Telemetrie nefungovala spolehlivě
+  - LoRA paket přijat cca jednou za minutu až 2
+  - SiK - na to že jsme balon viděli, jsme sik nepříjmali spolehlivě
+  - sonda CHMI ma data "pořád"
+
+#### 
+
+
+
+
 

@@ -1,3 +1,6 @@
 [submodule "fw/PX4-Autopilot"]
 	path = fw/PX4-Autopilot
 	url = git@github.com:ThunderFly-aerospace/PX4-Autopilot.git
+[submodule "fw/SiK"]
+	path = fw/SiK
+	url = git@github.com:ThunderFly-aerospace/SiK.git

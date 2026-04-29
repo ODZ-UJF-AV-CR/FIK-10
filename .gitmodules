@@ -4,3 +4,6 @@
 [submodule "fw/SiK"]
 	path = fw/SiK
 	url = git@github.com:ThunderFly-aerospace/SiK.git
+[submodule "fw/AIRDOS03"]
+	path = fw/AIRDOS03
+	url = git@github.com:UniversalScientificTechnologies/AIRDOS03.git

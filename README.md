@@ -6,16 +6,20 @@ Repozitář odkazující na použitý HW a SW v rámci letu Fik-10, 28.4.2026.
 
   - Final mass: 534g (measured after the flight)
 
-## HW - PX4 subsystém
-  - CUAV 5+ (kostka)
-  - TFLoRA (připojena do SPI)
-  - TF-SiK (připojeno do Telem1)
-  - UNIPAYLOAD01 s AIRDOS03 (připojeno do Telem2, a propojeno s GPS)
+## HW konfigurace
+
+Založeno na PX4 subsystému [TF-B1](https://docs.thunderfly.cz/instruments/TF-B1).
+
+  - [CUAV 5+](https://docs.px4.io/main/en/flight_controller/cuav_v5_plus) (Autopilot FMU)
+  - TFLoRA (připojena do SPI autopilota)
+  - [TFSIK01](https://docs.thunderfly.cz/avionics/TFLORA01/) (připojeno do Telem1 portu autopilota)
+  - [UNIPAYLOAD01](https://docs.thunderfly.cz/avionics/TFUNIPAYLOAD01/) s [AIRDOS03](https://docs.dos.ust.cz/airdos/AIRDOS03) (připojeno do Telem2, a propojeno s TFGPS01 přes TFPayload connector)
   - TFGPS (připojeno do GPS)
-  - Napájení z 2 článkového MLAB modulu (?)
+  - Napájení z 2 článkového MLAB modulu [LION2CELL01](https://www.mlab.cz/module/LION2CELL01/) přes měnič [TPS63060V01](https://www.mlab.cz/module/TPS63060V01/) na 5V. 
 
 ## SW konfigurace
 #### Sik
+
   - skripty přiloženými v repozitáři ve složce skripts
   - AIRSPEED 2
   - Balon BAUD 9600
